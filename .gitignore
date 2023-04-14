@@ -22,28 +22,69 @@
 
 # Flutter/Dart/Pub related
 **/doc/api/
-**/ios/Flutter/.last_build_id
 .dart_tool/
 .flutter-plugins
-.flutter-plugins-dependencies
 .packages
 .pub-cache/
 .pub/
 /build/
 
-# Web related
-lib/generated_plugin_registrant.dart
+# Android related
+**/android/**/gradle-wrapper.jar
+**/android/.gradle
+**/android/captures/
+**/android/gradlew
+**/android/gradlew.bat
+**/android/local.properties
+**/android/**/GeneratedPluginRegistrant.java
+**/android/app/google-services.json
+**/android/app/key.jks
 
-# Symbolication related
-app.*.symbols
+# iOS/XCode related
+**/ios/**/*.mode1v3
+**/ios/**/*.mode2v3
+**/ios/**/*.moved-aside
+**/ios/**/*.pbxuser
+**/ios/**/*.perspectivev3
+**/ios/**/*sync/
+**/ios/**/.sconsign.dblite
+**/ios/**/.tags*
+**/ios/**/.vagrant/
+**/ios/**/DerivedData/
+**/ios/**/Icon?
+**/ios/**/Pods/
+**/ios/**/.symlinks/
+**/ios/**/profile
+**/ios/**/xcuserdata
+**/ios/.generated/
+**/ios/Flutter/App.framework
+**/ios/Flutter/Flutter.framework
+**/ios/Flutter/Generated.xcconfig
+**/ios/Flutter/app.flx
+**/ios/Flutter/app.zip
+**/ios/Flutter/flutter_assets/
+**/ios/Flutter/flutter_export_environment.sh
+**/ios/ServiceDefinitions.json
+**/ios/Runner/GeneratedPluginRegistrant.*
+**/ios/Runner/GoogleService-Info.plist
+/Users/ashwindas/Desktop/Workspace/Git Projects/flutter_twitter_clone/ios/Runner/GoogleService-Info.plist
+GoogleService-Info.plist
 
-# Obfuscation related
-app.*.map.json
-/frontend/android/app/google-services.json
-/frontend/build
-/backend/functions/.eslintrc.js
-/backend/functions/package-lock.json
-/backend/.firebaserc
-/backend/.gitignore
-/backend/firebase.json
-/backend/functions/package.json
+# Exceptions to above rules.
+!**/ios/**/default.mode1v3
+!**/ios/**/default.mode2v3
+!**/ios/**/default.pbxuser
+!**/ios/**/default.perspectivev3
+!/packages/flutter_tools/test/data/dart_dependencies_test/**/.packages
+.flutter-plugins-dependencies
+android/app/google-services.json
+google-services.json
+
+android/.settings/org.eclipse.buildship.core.prefs
+android/app/.classpath
+android/.project
+android/app/.project
+android/app/.settings/org.eclipse.buildship.core.prefs
+android/app/.settings/org.eclipse.jdt.core.prefs
+android/app/google-services-dev.json
+android/app/google-services-pro.json
