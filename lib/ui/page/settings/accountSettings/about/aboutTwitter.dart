@@ -62,16 +62,14 @@ class AboutPage extends StatelessWidget {
           ),
           const HeaderWidget('Developer'),
           SettingRowWidget("Github", showDivider: true, onPressed: () {
-            Utility.launchURL("https://github.com/TheAlphamerc");
+            Utility.launchURL("https://github.com/Tyreos-Ventures");
           }),
           SettingRowWidget("LinkidIn", showDivider: true, onPressed: () {
-            Utility.launchURL("https://www.linkedin.com/in/thealphamerc/");
+            Utility.launchURL(
+                "https://www.linkedin.com/company/tyreos-asset-universe/");
           }),
-          SettingRowWidget("Twitter", showDivider: true, onPressed: () {
-            Utility.launchURL("https://twitter.com/TheAlphaMerc");
-          }),
-          SettingRowWidget("Blog", showDivider: true, onPressed: () {
-            Utility.launchURL("https://dev.to/thealphamerc");
+          SettingRowWidget("Website", showDivider: true, onPressed: () {
+            Utility.launchURL("https://tauterminal.io/");
           }),
         ],
       ),

@@ -36,10 +36,10 @@ class _ComposeBottomIconWidgetState extends State<ComposeBottomIconWidget> {
     setState(() {
       tweet = widget.textEditingController.text;
       if (widget.textEditingController.text.isNotEmpty) {
-        if (widget.textEditingController.text.length > 259 &&
-            widget.textEditingController.text.length < 280) {
+        if (widget.textEditingController.text.length > 4000 &&
+            widget.textEditingController.text.length < 4200) {
           wordCountColor = Colors.orange;
-        } else if (widget.textEditingController.text.length >= 280) {
+        } else if (widget.textEditingController.text.length >= 4200) {
           wordCountColor = Theme.of(context).colorScheme.error;
         } else {
           wordCountColor = Colors.blue;
@@ -80,10 +80,10 @@ class _ComposeBottomIconWidgetState extends State<ComposeBottomIconWidget> {
             child: Padding(
                 padding:
                     const EdgeInsets.symmetric(vertical: 0, horizontal: 20),
-                child: /*tweet != null &&*/ tweet.length > 289
+                child: /*tweet != null &&*/ tweet.length > 4200
                     ? Padding(
                         padding: const EdgeInsets.only(right: 10),
-                        child: customText('${280 - tweet.length}',
+                        child: customText('${4200 - tweet.length}',
                             style: TextStyle(
                                 color: Theme.of(context).colorScheme.error)),
                       )
@@ -96,8 +96,8 @@ class _ComposeBottomIconWidgetState extends State<ComposeBottomIconWidget> {
                             valueColor:
                                 AlwaysStoppedAnimation<Color>(wordCountColor),
                           ),
-                          tweet.length > 259
-                              ? customText('${280 - tweet.length}',
+                          tweet.length > 4000
+                              ? customText('${4200 - tweet.length}',
                                   style: TextStyle(color: wordCountColor))
                               : customText('',
                                   style: TextStyle(color: wordCountColor))
@@ -124,11 +124,11 @@ class _ComposeBottomIconWidgetState extends State<ComposeBottomIconWidget> {
     if (/*tweet == null || */ tweet.isEmpty) {
       return 0.0;
     }
-    if (tweet.length > 280) {
+    if (tweet.length > 4200) {
       return 1.0;
     }
     var length = tweet.length;
-    var val = length * 100 / 28000.0;
+    var val = length * 100 / 420000.0;
     return val;
   }
 

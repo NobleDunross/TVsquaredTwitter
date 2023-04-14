@@ -45,14 +45,14 @@ class ComposeTweetState extends ChangeNotifier {
 
   /// This method will trigger every time when user writes tweet description.
   /// `hideUserList` is set to false to reset user list show flag.
-  /// If description is not empty and its length is lesser then 280 characters
+  /// If description is not empty and its length is lesser then 4200 characters
   /// then value of `enableSubmitButton` is set to true.
   ///
   /// `enableSubmitButton` is responsible to enable/disable tweet submit button
   void onDescriptionChanged(String text, SearchState searchState) {
     description = text;
     hideUserList = false;
-    if (text.isEmpty || text.length > 280) {
+    if (text.isEmpty || text.length > 4200) {
       /// Disable submit button if description is not available
       enableSubmitButton = false;
       notifyListeners();

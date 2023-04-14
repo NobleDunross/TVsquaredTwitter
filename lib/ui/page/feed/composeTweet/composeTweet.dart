@@ -87,7 +87,7 @@ class _ComposeTweetReplyPageState extends State<ComposeTweetPage> {
   /// Submit tweet to save in firebase database
   void _submitButton() async {
     if (_textEditingController.text.isEmpty ||
-        _textEditingController.text.length > 280) {
+        _textEditingController.text.length > 4200) {
       return;
     }
     var state = Provider.of<FeedState>(context, listen: false);
