@@ -374,8 +374,8 @@ class _ProfilePageState extends State<ProfilePage>
                         indicator: TabIndicator(),
                         controller: _tabController,
                         tabs: const <Widget>[
-                          Text("Tweets"),
-                          Text("Tweets & replies"),
+                          Text("News"),
+                          Text("News & replies"),
                           Text("Media")
                         ],
                       ),
@@ -446,8 +446,8 @@ class _ProfilePageState extends State<ProfilePage>
                 padding: const EdgeInsets.only(top: 50, left: 30, right: 30),
                 child: NotifyText(
                   title: isMyProfile
-                      ? 'You haven\'t ${isReply ? 'reply to any Tweet' : isMedia ? 'post any media Tweet yet' : 'post any Tweet yet'}'
-                      : '${authState.profileUserModel.userName} hasn\'t ${isReply ? 'reply to any Tweet' : isMedia ? 'post any media Tweet yet' : 'post any Tweet yet'}',
+                      ? 'You haven\'t ${isReply ? 'reply to any News' : isMedia ? 'post any media News yet' : 'post any News yet'}'
+                      : '${authState.profileUserModel.userName} hasn\'t ${isReply ? 'reply to any News' : isMedia ? 'post any media News yet' : 'post any News yet'}',
                   subTitle: isMyProfile
                       ? 'Tap tweet button to add new'
                       : 'Once he\'ll do, they will be shown up here',

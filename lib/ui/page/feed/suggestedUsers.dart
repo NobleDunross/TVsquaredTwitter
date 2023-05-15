@@ -129,7 +129,7 @@ class _SuggestedUsersState extends State<SuggestedUsers> {
                                   TitleText('Suggestions for you to follow'),
                                   SizedBox(height: 8),
                                   Text(
-                                    'When you follow someone, you\'ll see their Tweets in your Home Timeline',
+                                    'When you follow someone, you\'ll see their News in your Home Timeline',
                                     style: TextStyles.textStyle14,
                                   ),
                                 ],

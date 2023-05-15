@@ -58,7 +58,7 @@ class PostLikeTile extends StatelessWidget {
         Padding(
           padding: const EdgeInsets.only(left: 60, bottom: 5, top: 5),
           child: TitleText(
-            '$length people like your Tweet',
+            '$length people like your News',
             fontSize: 18,
             color: Colors.black87,
             fontWeight: FontWeight.w500,
